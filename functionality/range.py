@@ -1,9 +1,11 @@
 class Range:
     def get_range_list(self, arr):
         sorted_input = self.sort_input_int_arr(arr)
-        periodic_range = self.periodic_intervals(sorted_input)
-        periodic_range_list = self.list_of_periodic_ranges(periodic_range)
-        return periodic_range_list
+        if ('NOT_INT' not in sorted_input):
+            periodic_range = self.periodic_intervals(sorted_input)
+            periodic_range_list = self.list_of_periodic_ranges(periodic_range)
+            return periodic_range_list
+        return sorted_input
 
     def sort_input_int_arr(self, arr):
         is_int = all([isinstance(item, int) for item in arr])
