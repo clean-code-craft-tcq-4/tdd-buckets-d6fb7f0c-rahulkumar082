@@ -1,5 +1,5 @@
 import unittest
-from functionality.range import Range
+from functionality.utils.range import Range
 
 
 class TestRange(unittest.TestCase):

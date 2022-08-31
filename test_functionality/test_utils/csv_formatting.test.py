@@ -1,5 +1,5 @@
 import unittest
-from functionality.csv_formatter import CSV_Formatter
+from functionality.utils.csv_formatter import CSV_Formatter
 
 
 class Test_CSV_Formatting(unittest.TestCase):
