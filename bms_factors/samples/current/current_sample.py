@@ -20,6 +20,6 @@ class CurrentSample:
         amps_readings_list = []
         for reading in current_sample:
             value = self.a2d_obj.map_value(reading)
-            if (value is not 'Error_Reading'):
+            if (value != 'Error_Reading'):
                 amps_readings_list.append(value)
         return self.periodic_current_range_in_amps(amps_readings_list)
